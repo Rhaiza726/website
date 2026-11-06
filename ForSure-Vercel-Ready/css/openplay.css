@@ -1,0 +1,6 @@
+/* Open Play feature – uses existing ForSure design tokens */
+.op-hero{display:flex;align-items:center;justify-content:space-between;gap:20px;padding:28px 32px;border-radius:var(--r-lg);background:linear-gradient(120deg,var(--navy),var(--navy-2));color:#fff}
+.op-hero h2{color:#fff;margin:10px 0 4px}.op-hero p{color:#D4DFEF;margin:0}.op-hero-mark{font-size:54px;background:rgba(255,255,255,.1);border-radius:50%;width:92px;height:92px;display:grid;place-items:center;flex:none}
+.op-card{display:flex;flex-direction:column;gap:14px}.op-card h3{margin:0}.op-card dl.kv{gap:9px 14px}.op-progress{height:8px;background:var(--done-bg);border-radius:99px;overflow:hidden}.op-progress span{display:block;height:100%;background:var(--cta);border-radius:99px}.op-join{display:flex;gap:8px}.op-join input{min-width:0;flex:1}.op-join .btn{white-space:nowrap}.op-form .grid{gap:16px}.op-admin-card{gap:14px}
+@media(max-width:600px){.op-hero{padding:22px}.op-hero-mark{width:64px;height:64px;font-size:36px}.op-join{flex-direction:column}.op-join .btn{width:100%}}
+.op-player-list{border-top:1px solid var(--line);padding-top:10px;display:grid;gap:6px}.op-player-list .row{gap:10px}

@@ -1,0 +1,16 @@
+/* Reset, typography and layout utilities */
+html{height:100%;scroll-padding-top:calc(env(safe-area-inset-top,0px) + 72px)}
+*,*::before,*::after{box-sizing:inherit}
+body{margin:0;min-height:100%;background:var(--bg);color:var(--text);font:400 16px/1.5 Barlow,system-ui,sans-serif;-webkit-font-smoothing:antialiased}
+h1,h2,h3,h4{font-family:"Barlow Condensed","Arial Narrow",sans-serif;font-weight:700;line-height:1.05;margin:0;letter-spacing:.005em}
+h1{font-size:clamp(40px,7vw,64px)}h2{font-size:clamp(30px,4.5vw,40px)}h3{font-size:28px}h4{font-size:22px}
+p{margin:0}
+button{font:inherit;cursor:pointer}
+:focus-visible{outline:3px solid var(--focus);outline-offset:2px}
+.wrap{max-width:1200px;margin:0 auto;padding:0 clamp(16px,5vw,80px)}
+.muted{color:var(--muted)}.small{font-size:14px;line-height:20px}.cap{font-size:12px;line-height:16px}
+.stack>*+*{margin-top:var(--s,16px)}
+.row{display:flex;gap:12px;align-items:center;flex-wrap:wrap}
+.between{justify-content:space-between}
+.grid>*,.row>*{min-width:0}
+img,svg{max-width:100%}

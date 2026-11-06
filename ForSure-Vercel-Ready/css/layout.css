@@ -1,0 +1,19 @@
+/* Site chrome: header, navigation, footer */
+.hdr{position:sticky;top:env(safe-area-inset-top,0px);z-index:30;background:var(--navy);color:#fff}
+.hdr .wrap{display:flex;align-items:center;gap:24px;height:64px}
+.brand{display:flex;align-items:center;gap:10px;font:700 26px/1 "Barlow Condensed",sans-serif;color:#fff;background:none;border:0;padding:0;letter-spacing:.02em}
+.brand i{width:22px;height:22px;border-radius:50%;background:var(--ball);display:inline-block;position:relative}
+.brand i::after{content:"";position:absolute;inset:6px;border-radius:50%;background:var(--navy)}
+.nav{display:flex;gap:4px;flex:1}
+.nav button{background:none;border:0;color:#C9D6E8;padding:8px 12px;border-radius:var(--r-sm);font-weight:500}
+.nav button:hover{color:#fff;background:rgba(255,255,255,.08)}
+.nav button[aria-current=page]{color:#fff;box-shadow:inset 0 -3px 0 var(--ball);border-radius:0}
+.hdr .tools{display:flex;gap:12px;align-items:center}
+.burger{display:none;background:none;border:1px solid rgba(255,255,255,.3);color:#fff;border-radius:var(--r-sm);padding:6px 10px}
+.switch{display:flex;background:rgba(255,255,255,.1);border-radius:999px;padding:3px}
+.switch button{border:0;background:none;color:#C9D6E8;padding:4px 12px;border-radius:999px;font-size:13px;font-weight:600}
+.switch button[aria-pressed=true]{background:var(--ball);color:var(--navy)}
+footer{background:var(--navy);color:#C9D6E8;margin-top:56px}
+footer .wrap{padding-top:40px;padding-bottom:40px;display:grid;grid-template-columns:2fr 1fr 1fr;gap:32px}
+footer a,footer button.l{color:#C9D6E8;background:none;border:0;padding:0;text-align:left;display:block;margin-top:8px}
+footer button.l:hover{color:#fff}

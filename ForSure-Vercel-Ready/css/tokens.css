@@ -1,0 +1,15 @@
+/* Design tokens: colors, radii, light + dark themes (see Figma guide in index.html) */
+:root{
+  box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px);
+  --navy:#10243E;--navy-2:#1B3860;--ball:#DDEB3C;--cta:#C2410C;--cta-h:#9A330A;
+  --bg:#F3F5F9;--card:#FFFFFF;--text:#10243E;--muted:#55657A;--line:#D8DFEA;--field:#FFFFFF;
+  --ok-bg:#DCF5E6;--ok:#11663A;--pend-bg:#FFF0D1;--pend:#7A4A00;--bad-bg:#FDE2E2;--bad:#9B1C1C;
+  --done-bg:#E3E8F1;--done:#34445B;--res-bg:#ECE3F7;--res:#52318A;--focus:#2563EB;
+  --r-sm:8px;--r-md:12px;--r-lg:20px;
+}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
+  --navy:#0A1628;--navy-2:#16294A;--cta:#E2570F;--cta-h:#F06A22;--bg:#0B1524;--card:#12233B;--text:#E9EEF7;--muted:#9FB0C6;--line:#25395A;--field:#0E1C31;
+  --ok-bg:#12382A;--ok:#7FE0AB;--pend-bg:#3F2F0C;--pend:#FFD27A;--bad-bg:#432024;--bad:#FFA5A5;--done-bg:#22324A;--done:#B9C6DA;--res-bg:#2E2447;--res:#CDB4F5;--focus:#7AA7FF}}
+:root[data-theme="dark"]{
+  --navy:#0A1628;--navy-2:#16294A;--cta:#E2570F;--cta-h:#F06A22;--bg:#0B1524;--card:#12233B;--text:#E9EEF7;--muted:#9FB0C6;--line:#25395A;--field:#0E1C31;
+  --ok-bg:#12382A;--ok:#7FE0AB;--pend-bg:#3F2F0C;--pend:#FFD27A;--bad-bg:#432024;--bad:#FFA5A5;--done-bg:#22324A;--done:#B9C6DA;--res-bg:#2E2447;--res:#CDB4F5;--focus:#7AA7FF}

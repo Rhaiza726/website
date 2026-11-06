@@ -1,0 +1,56 @@
+/* Customer pages: hero, court cards, slot grid, tables, SMS phone mock */
+.hero{background:var(--navy);color:#fff;overflow:hidden}
+.hero .wrap{display:grid;grid-template-columns:1.05fr 1fr;gap:48px;align-items:center;padding-top:64px;padding-bottom:64px}
+.hero p.lead{font-size:19px;color:#C9D6E8;max-width:46ch;margin-top:20px}
+.hero .ctas{display:flex;gap:12px;margin-top:32px;flex-wrap:wrap}
+.hero .btn-secondary{border-color:#fff;color:#fff}.hero .btn-secondary:hover{background:#fff;color:var(--navy)}
+.courtfig{width:100%;height:auto;display:block;border-radius:var(--r-md)}
+.pad{padding:56px 0}
+.pad-sm{padding:32px 0}
+.quick{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
+.quick button{text-align:left;background:var(--card);border:1px solid var(--line);border-radius:var(--r-md);padding:16px;color:var(--text)}
+.quick button:hover{border-color:var(--cta)}
+.quick b{font:700 24px/1 "Barlow Condensed",sans-serif;display:block;margin-bottom:6px}
+.steps{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;counter-reset:s}
+.steps>div{border-top:4px solid var(--navy);padding-top:16px}
+.steps>div:nth-child(2){border-color:var(--cta)}.steps>div:nth-child(3){border-color:var(--ok)}
+.band{background:var(--card);border-block:1px solid var(--line)}
+/* court card */
+.ccard{padding:0;overflow:hidden;display:flex;flex-direction:column}
+.ccard .body{padding:20px;display:flex;flex-direction:column;gap:10px;flex:1}
+.price{font:700 28px/1 "Barlow Condensed",sans-serif;color:var(--cta)}
+.price small{font:500 14px Barlow;color:var(--muted)}
+.tags{display:flex;gap:6px;flex-wrap:wrap}.tag{font-size:12px;border:1px solid var(--line);border-radius:6px;padding:1px 8px;color:var(--muted)}
+/* slot grid */
+.sg{overflow-x:auto;border:1px solid var(--line);border-radius:var(--r-md);background:var(--card);padding:8px}
+.sg table{border-collapse:separate;border-spacing:4px;min-width:max-content}
+.sg th{font-size:12px;font-weight:600;color:var(--muted);padding:2px 4px;white-space:nowrap}
+.sg th.rh{position:sticky;left:0;background:var(--card);text-align:left;color:var(--text);font:700 18px "Barlow Condensed",sans-serif;z-index:1;padding-right:8px}
+.sg td{padding:0}
+.cell{width:68px;height:46px;border:0;border-radius:6px;font-size:12px;font-weight:600;display:block}
+.cell.open{background:var(--ok-bg);color:var(--ok)}.cell.open:hover{outline:2px solid var(--ok)}
+.cell.taken{background:var(--res-bg);color:var(--res);cursor:not-allowed}
+.cell.past{background:var(--done-bg);color:var(--muted);opacity:.55;cursor:not-allowed}
+.cell.blocked{background:repeating-linear-gradient(45deg,var(--done-bg),var(--done-bg) 6px,var(--bg) 6px,var(--bg) 12px);color:var(--muted);cursor:not-allowed}
+.cell.sel{background:var(--navy);color:#fff}
+.cell.a-pending{background:var(--pend-bg);color:var(--pend)}.cell.a-confirmed{background:var(--ok-bg);color:var(--ok)}.cell.a-completed{background:var(--done-bg);color:var(--done)}
+.cell.a-pending,.cell.a-confirmed,.cell.a-completed{width:100%;text-align:left;padding:4px 8px;line-height:1.25;overflow:hidden;height:46px}
+.legend{display:flex;gap:16px;flex-wrap:wrap;font-size:13px;color:var(--muted)}
+.legend i{display:inline-block;width:12px;height:12px;border-radius:3px;margin-right:6px;vertical-align:-1px}
+.sumbar{position:sticky;bottom:0;background:var(--card);border:1px solid var(--line);border-radius:var(--r-md);padding:16px;display:flex;gap:16px;align-items:center;flex-wrap:wrap;justify-content:space-between;margin-top:16px;box-shadow:0 -6px 18px rgba(16,36,62,.08)}
+.dur{display:flex;gap:8px}.dur button{min-width:56px}
+/* tables */
+.tw{overflow-x:auto;border:1px solid var(--line);border-radius:var(--r-md);background:var(--card)}
+table.t{border-collapse:collapse;width:100%;min-width:720px}
+.t th{text-align:left;font-size:13px;color:var(--muted);font-weight:600;padding:12px 16px;border-bottom:1px solid var(--line);white-space:nowrap}
+.t td{padding:12px 16px;border-bottom:1px solid var(--line);vertical-align:middle}
+.t tr:last-child td{border-bottom:0}
+/* phone */
+.phone{width:300px;max-width:100%;background:#0B1220;border-radius:36px;padding:12px;margin:0 auto;box-shadow:0 20px 40px rgba(16,36,62,.25)}
+.phone .scr{background:#EEF1F6;border-radius:26px;min-height:420px;overflow:hidden;display:flex;flex-direction:column}
+.phone .top{background:#fff;padding:14px 16px 10px;border-bottom:1px solid #DDE3EC;text-align:center;color:#10243E}
+.phone .top b{display:block;font-size:15px}.phone .top span{font-size:11px;color:#55657A}
+.phone .msgs{padding:14px;display:flex;flex-direction:column;gap:10px;flex:1}
+.bub{background:#fff;color:#10243E;border-radius:16px 16px 16px 4px;padding:10px 12px;font-size:13.5px;line-height:1.4;box-shadow:0 1px 2px rgba(0,0,0,.08)}
+.bub time{display:block;font-size:11px;color:#6B7A90;margin-top:4px}
+.samp{text-align:center;font-size:11px;color:#6B7A90;background:#E1E7F0;border-radius:999px;padding:2px 10px;align-self:center}

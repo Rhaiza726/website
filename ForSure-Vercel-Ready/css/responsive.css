@@ -1,0 +1,59 @@
+/* Responsive rules. Breakpoints: 1024 (tablet landscape), 900 (nav collapses), 600 (phones), 400 (small phones) */
+@media (max-width:1024px){
+  .g4,.quick{grid-template-columns:repeat(2,1fr)}
+  .hero .wrap{gap:32px}
+}
+@media (max-width:900px){
+  .g3{grid-template-columns:repeat(2,1fr)}
+  .hero .wrap{grid-template-columns:1fr;padding-top:40px;padding-bottom:40px}
+  .steps{grid-template-columns:1fr}
+  .adm{grid-template-columns:1fr;min-height:0}
+  .side{flex-direction:row;overflow-x:auto;border-right:0;border-bottom:1px solid var(--line);padding:8px;-webkit-overflow-scrolling:touch}
+  .side button{white-space:nowrap;flex:none}
+  footer .wrap{grid-template-columns:1fr}
+  .burger{display:block}
+  .nav{display:none;position:absolute;top:64px;left:0;right:0;background:var(--navy);flex-direction:column;padding:8px 16px 16px;max-height:calc(100vh - 64px);max-height:calc(100dvh - 64px);overflow-y:auto}
+  .nav.open{display:flex}
+  .nav button{text-align:left;min-height:44px}
+  .nav button[aria-current=page]{box-shadow:inset 4px 0 0 var(--ball);border-radius:0}
+  .nav .btn{margin:8px 0 0!important;width:100%}
+  .hdr .wrap{gap:12px}
+  .hdr .tools{margin-left:auto}
+}
+@media (max-width:600px){
+  h3{font-size:24px}
+  .g2,.g3,.g4{grid-template-columns:1fr}
+  .quick{grid-template-columns:1fr 1fr;gap:12px}
+  .card{padding:18px}
+  .pad{padding:40px 0}
+  .hero p.lead{font-size:17px}
+  .hero .ctas .btn{flex:1 1 100%}
+  .switch button{padding:4px 8px}
+  .brand span{display:none}
+  .stepper{gap:4px}
+  .stepper div{font-size:12px;line-height:1.2;padding:8px 0}
+  .cell{width:60px}
+  .sumbar{padding:12px}
+  .sumbar>*{flex:1 1 100%}
+  .sumbar .row{justify-content:space-between}
+  .dur{width:100%}.dur .chip{flex:1}
+  .ov{align-items:flex-end;padding:0}
+  .modal{border-radius:var(--r-lg) var(--r-lg) 0 0;max-height:92vh;max-height:92dvh;padding:22px 18px}
+  .main{padding:20px 16px}
+  .bars{gap:6px}
+  .donut{width:120px;height:120px}.donut::after{inset:26px}
+  .btn{padding:0 16px}
+  dl.kv{gap:6px 12px}
+  #toast{width:calc(100% - 32px);max-width:none}
+}
+@media (max-width:400px){
+  .quick{grid-template-columns:1fr}
+  .wrap{padding:0 14px}
+  h1{font-size:36px}
+  .switch button{padding:4px 6px;font-size:12px}
+  .burger{padding:6px 8px}
+  .hdr .wrap{gap:8px}
+  .stepper div{font-size:11px}
+}
+@media (hover:none){.cell.open:hover{outline:0}}
+@media (prefers-reduced-motion:reduce){*{transition:none!important}}
